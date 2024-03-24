@@ -126,3 +126,7 @@ enum Direction {
 ```
 
 `union` type is also available
+
+## generic
+
+see `generic.ts`
