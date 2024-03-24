@@ -61,3 +61,23 @@ window.confirm = () => {
 
 - `variable = value as type`
 - `const result = (resnponse as any) as User`: 2 step
+
+## type alias
+
+```typescript
+// type Name = type
+type Point = {
+    x: number;
+    y: number;
+}
+
+type Formatter = (a: string) => string
+function printName(firstName: string, formatter: Formatter) {
+    console.log(formatter(firstName))
+}
+
+// index type
+// { [] : type }
+type Label = {
+    [key: string] : string
+}
