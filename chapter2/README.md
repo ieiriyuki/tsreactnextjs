@@ -42,3 +42,17 @@ function singBirds(birdInfo: (x: string) => string[]): string {
     return birdInfo('hato, kiji')[0] + 'piyo piyo'
 }
 ```
+
+## type inference
+
+```typescript
+const names = ['takua', 'yoshiki', 'zento']
+names.forEach(name) => {
+    console.log(name.toUppercase())
+}
+
+// compile error for type
+window.confirm = () => {
+    console.log('hello')
+}
+```
