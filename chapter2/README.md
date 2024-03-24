@@ -130,3 +130,12 @@ enum Direction {
 ## generic
 
 see `generic.ts`
+
+## union / intersection
+
+```typescript
+type Id = number | string
+function printId(id: Id) {
+    return id
+}
+```
