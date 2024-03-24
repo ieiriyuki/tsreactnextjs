@@ -179,3 +179,7 @@ function processUser(user?: User) {
     let s = user!.name
 }
 ```
+
+## type guard
+
+see `typeguard.ts`
