@@ -183,3 +183,7 @@ function processUser(user?: User) {
 ## type guard
 
 see `typeguard.ts`
+
+## keyof
+
+see `keyof.ts`
