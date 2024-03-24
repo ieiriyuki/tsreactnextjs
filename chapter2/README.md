@@ -215,3 +215,7 @@ user.gender = 'male'  // compile error
 
 type UserReadonly = Readonly<User>  // make type immutable
 ```
+
+## unknown
+
+see `unknown.ts`
