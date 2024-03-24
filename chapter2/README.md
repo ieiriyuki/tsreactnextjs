@@ -201,3 +201,17 @@ let versions: SupportVersions = {
     'v104': true // compile error
 }
 ```
+
+## readonly
+
+```typescript
+type User = {
+    readonly name: string
+    readonly gender: string
+}
+
+let user: User = { name: 'alice', gender: 'female' }
+user.gender = 'male'  // compile error
+
+type UserReadonly = Readonly<User>  // make type immutable
+```
