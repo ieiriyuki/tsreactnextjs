@@ -187,3 +187,17 @@ see `typeguard.ts`
 ## keyof
 
 see `keyof.ts`
+
+## index
+
+```typescript
+type SupportVersions = {
+    [env: number]: boolean
+}
+
+let versions: SupportVersions = {
+    102: false,
+    103: true,
+    'v104': true // compile error
+}
+```
