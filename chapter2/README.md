@@ -141,3 +141,14 @@ function printId(id: Id) {
 ```
 
 see `intersection.ts`
+
+## literal
+
+`let variable : 'data1' | 'data2' | 'data3'`
+
+## never
+
+```typescript
+function compare(a: string, b: string): never {
+    throw new Error('message')
+}
