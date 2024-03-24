@@ -223,3 +223,8 @@ see `unknown.ts`
 ## async / await
 
 see `async.ts`
+
+## type definition file
+
+- `npm install --save-dev @types/jquery`
+- `./lib/hello.js` <-> `./lib/hello.d.ts`
