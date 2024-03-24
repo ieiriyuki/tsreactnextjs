@@ -81,3 +81,12 @@ function printName(firstName: string, formatter: Formatter) {
 type Label = {
     [key: string] : string
 }
+```
+
+## interface
+
+```typescript
+interface name {
+    property: type;
+}
+```
