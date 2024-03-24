@@ -15,3 +15,8 @@ interface Point {
 // printPoint({ x: 1, y: 2 })
 
 printPoint({ x: 1, y: 2, z: 3 })
+
+class MyPoint implements Point {
+    x: number;
+    y: number;
+}
