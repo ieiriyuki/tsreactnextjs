@@ -1,4 +1,4 @@
-function sayHello (firstName: string) {
+function sayHello (firstName: string, greeting?: string) {
     return ('Hello ' + firstName)
 }
 
