@@ -169,3 +169,13 @@ let user: User
 user = { name: 'takuya' }
 console.log(user.social?.facebook)
 ```
+
+## non-null assertion operator
+
+error may happen at runtime
+
+```typescript
+function processUser(user?: User) {
+    let s = user!.name
+}
+```
