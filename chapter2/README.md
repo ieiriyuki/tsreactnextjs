@@ -56,3 +56,8 @@ window.confirm = () => {
     console.log('hello')
 }
 ```
+
+## type assertion
+
+- `variable = value as type`
+- `const result = (resnponse as any) as User`: 2 step
