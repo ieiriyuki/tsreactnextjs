@@ -1,5 +1,10 @@
 # Fundamentals of TypeScript
 
+## compile
+
+- `tsc --strictNullChecks sayHello.ts`
+- open `index.html`
+
 ## array
 
 ```typescript
@@ -25,4 +30,3 @@ let optional: { name: string, alias?: string }
 ## any
 
 `let user: any = 'foo'`
-
