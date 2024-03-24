@@ -139,3 +139,5 @@ function printId(id: Id) {
     return id
 }
 ```
+
+see `intersection.ts`
