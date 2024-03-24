@@ -152,3 +152,20 @@ see `intersection.ts`
 function compare(a: string, b: string): never {
     throw new Error('message')
 }
+```
+
+## optional chaining
+
+```typescript
+interface User {
+    name: string
+    social?: {
+        facebook: boolean
+        twitter: boolean
+    }
+}
+
+let user: User
+user = { name: 'takuya' }
+console.log(user.social?.facebook)
+```
