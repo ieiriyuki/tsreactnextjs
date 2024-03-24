@@ -53,8 +53,10 @@ class User implements IUser {
         this.age = age
     }
 
-    // lack of sayHello method
+    sayHello() {
+        return `Hello, I am ${this.name}, ${this.age} years old.`
+    }
 }
 
 const user = new User('John', 30)
-console.log(user.name)
+console.log(user.sayHello())
