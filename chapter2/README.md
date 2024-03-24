@@ -97,4 +97,11 @@ interface name {
 class Name {
     value: type;
 }
+
+// access modifiers
+class Sample {
+    public x: number; // default
+    private y: number;
+    protected z: number;
+}
 ```
