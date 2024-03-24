@@ -90,3 +90,11 @@ interface name {
     property: type;
 }
 ```
+
+## class
+
+```typescript
+class Name {
+    value: type;
+}
+```
