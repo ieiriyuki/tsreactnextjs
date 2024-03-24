@@ -36,3 +36,25 @@ class Point3D extends Point {
 const point3D = new Point3D()
 point3D.moveZ(1)
 console.log(`${point3D.x}, ${point3D.y}, ${point3D.z}`)
+
+interface IUser {
+    name: string;
+    age: number;
+
+    sayHello: () => string;
+}
+
+class User implements IUser {
+    name: string;
+    age: number;
+
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+
+    // lack of sayHello method
+}
+
+const user = new User('John', 30)
+console.log(user.name)
