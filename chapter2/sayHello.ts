@@ -1,6 +1,6 @@
 function sayHello (firstName: string) {
-    console.log('Hello ' + firstName)
+    return ('Hello ' + firstName)
 }
 
 let firstName: string = 'Takuya'
-sayHello(firstName)
+document.body.innerHTML = sayHello(firstName)
