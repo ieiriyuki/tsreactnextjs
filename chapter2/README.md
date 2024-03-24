@@ -105,3 +105,24 @@ class Sample {
     protected z: number;
 }
 ```
+
+## enum
+
+```typescript
+// values are 0, 1, 2, 3 by default
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right
+}
+
+enum Direction {
+    Up = 'UP',
+    Down = 'DOWN',
+    Left = 'LEFT',
+    Right = 'RIGHT'
+}
+```
+
+`union` type is also available
