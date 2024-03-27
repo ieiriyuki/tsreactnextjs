@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Hello from './components/Hello';
 import Name from './components/Name';
+import Message from './components/Message';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -12,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Hello />
     <Name />
+    <Message />
   </React.StrictMode>
 );
 
