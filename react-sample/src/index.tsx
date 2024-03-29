@@ -6,6 +6,7 @@ import Name from './components/Name';
 import Message from './components/Message';
 import Parent from './components/ContainerSample';
 import Page from './components/ContextSample';
+import Counter from './components/StateSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -18,6 +19,7 @@ root.render(
     <Message />
     <Parent />
     <Page />
+    <Counter />
   </React.StrictMode>
 );
 
