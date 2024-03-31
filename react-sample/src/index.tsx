@@ -9,6 +9,7 @@ import Page from './components/ContextSample';
 import Counter from './components/StateSample';
 import RCounter from './components/ReducerSample';
 import { PParent } from './components/Parent';
+import { CbParent } from './components/CallbackSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -24,6 +25,7 @@ root.render(
     <Counter />
     <RCounter initialValue={0}/>
     <PParent />
+    <CbParent />
   </React.StrictMode>
 );
 
