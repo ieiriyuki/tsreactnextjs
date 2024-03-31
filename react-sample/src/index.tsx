@@ -11,6 +11,7 @@ import RCounter from './components/ReducerSample';
 import { PParent } from './components/Parent';
 import { CbParent } from './components/CallbackSample';
 import { UseMemoSample } from './components/UseMemoSample';
+import { Clock } from './components/Clock';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -28,6 +29,7 @@ root.render(
     <PParent />
     <CbParent />
     <UseMemoSample />
+    <Clock />
   </React.StrictMode>
 );
 
