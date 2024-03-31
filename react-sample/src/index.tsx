@@ -14,6 +14,7 @@ import { UseMemoSample } from './components/UseMemoSample';
 import { Clock } from './components/Clock';
 import UCParent from './components/UseContextSample';
 import ImageUploader from './components/UseRefSample';
+import IHParent from './components/ImperativeHandleSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -34,6 +35,7 @@ root.render(
     <Clock />
     <UCParent />
     <ImageUploader />
+    <IHParent />
   </React.StrictMode>
 );
 
