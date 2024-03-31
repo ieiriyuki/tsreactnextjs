@@ -12,6 +12,7 @@ import { PParent } from './components/Parent';
 import { CbParent } from './components/CallbackSample';
 import { UseMemoSample } from './components/UseMemoSample';
 import { Clock } from './components/Clock';
+import UCParent from './components/UseContextSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -30,6 +31,7 @@ root.render(
     <CbParent />
     <UseMemoSample />
     <Clock />
+    <UCParent />
   </React.StrictMode>
 );
 
