@@ -15,6 +15,7 @@ import { Clock } from './components/Clock';
 import UCParent from './components/UseContextSample';
 import ImageUploader from './components/UseRefSample';
 import IHParent from './components/ImperativeHandleSample';
+import { Input } from './components/CustomeHookSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -36,6 +37,7 @@ root.render(
     <UCParent />
     <ImageUploader />
     <IHParent />
+    <Input />
   </React.StrictMode>
 );
 
