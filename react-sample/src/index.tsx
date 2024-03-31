@@ -7,6 +7,7 @@ import Message from './components/Message';
 import Parent from './components/ContainerSample';
 import Page from './components/ContextSample';
 import Counter from './components/StateSample';
+import rCounter from './components/ReducerSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -20,6 +21,7 @@ root.render(
     <Parent />
     <Page />
     <Counter />
+    {/* <rCounter /> error */}
   </React.StrictMode>
 );
 
