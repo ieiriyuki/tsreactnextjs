@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 
 const UPDATE_CYCLE = 1000
 const KEY_LOCALE = 'KEY_LOCALE'
@@ -35,7 +35,7 @@ export const Clock = () => {
   }, [])  // 第2引数は依存配列で, 毎描画時に評価され, 中身が違うときに副作用が実行される
 
   // side effect to read local storage
-  useEffect(() => {
+  useLayoutEffect(() => {
     const savedLocale = localStorage.getItem(KEY_LOCALE)
     if (savedLocale !== null) {
       setLocale(getLocaleFromString(savedLocale))
