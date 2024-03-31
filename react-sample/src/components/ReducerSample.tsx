@@ -21,9 +21,9 @@ type CounterProps = {
   initialValue: number
 }
 
-const rCounter = (props: CounterProps) => {
+const RCounter = (props: CounterProps) => {
   const { initialValue } = props
-  const [count, dispatch] = useReducer(reducer, initialValue)  // FIXME
+  const [count, dispatch] = useReducer(reducer, initialValue)
 
   return (
     <div>
@@ -36,4 +36,4 @@ const rCounter = (props: CounterProps) => {
   )
 }
 
-export default rCounter
+export default RCounter
