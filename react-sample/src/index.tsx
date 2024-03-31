@@ -8,6 +8,7 @@ import Parent from './components/ContainerSample';
 import Page from './components/ContextSample';
 import Counter from './components/StateSample';
 import RCounter from './components/ReducerSample';
+import { PParent } from './components/Parent';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -22,6 +23,7 @@ root.render(
     <Page />
     <Counter />
     <RCounter initialValue={0}/>
+    <PParent />
   </React.StrictMode>
 );
 
