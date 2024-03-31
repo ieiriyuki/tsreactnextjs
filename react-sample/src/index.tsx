@@ -13,6 +13,7 @@ import { CbParent } from './components/CallbackSample';
 import { UseMemoSample } from './components/UseMemoSample';
 import { Clock } from './components/Clock';
 import UCParent from './components/UseContextSample';
+import ImageUploader from './components/UseRefSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -32,6 +33,7 @@ root.render(
     <UseMemoSample />
     <Clock />
     <UCParent />
+    <ImageUploader />
   </React.StrictMode>
 );
 
