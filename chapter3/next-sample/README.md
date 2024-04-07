@@ -27,8 +27,47 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Link
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+sample usage of Link
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```typescript
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+<Link href="/ssr">
+  <a>go to ssr</a>
+</Link>
+
+<Link
+    href={{
+        pathname: '/ssg',
+        query: { keyword: 'hello' },
+    }}>
+    <a>go to ssr</a>
+</Link>
+
+<Link href="/ssr">
+    <button>Jump to SSG page</button>
+</Link>
+
+const router = useRouter()
+const onSubmit = () => {
+    router.push('/ssr')
+    router.push({
+        pathname: '/ssg',
+        query: { keyword: 'hello' },
+    })
+}
+
+router.reload()
+router.back()
+// subscribe events at move start
+router.events.on('routeChangeStart', (url, { shallow }) => {
+    // url is a path to move to
+    // shallow will be true when shallow routing (only path is replaced)
+})
+// subscribe events at move end
+router.events.on('routeChangeComplete', (url, { shallow }) => {
+})
+```
