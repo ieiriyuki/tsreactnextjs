@@ -71,3 +71,12 @@ router.events.on('routeChangeStart', (url, { shallow }) => {
 router.events.on('routeChangeComplete', (url, { shallow }) => {
 })
 ```
+## Env
+
+below are available
+
+- `.env`
+- `.env.local`
+- `.env.${name}`
+- `.env.${name}.local`
+- `*.local` is assumed to be added to `.gitignore`, store api key
