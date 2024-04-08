@@ -71,3 +71,11 @@ export const CountButton = (props: CountButtonProps) => {
     )
 }
 ```
+
+### Atomic design
+
+- atoms: 状態や振る舞いを持たない, 特定のドメインに依存しない
+- molecules: 1つの役割を持ったuiコンポーネント
+- organisms: ドメインに依存したデータを受け取ったり, contextを参照したり
+- templates: ページ全体のレイアウト
+- pages: templateで行わない状態の管理, router関係の処理, APIコールなど副作用
