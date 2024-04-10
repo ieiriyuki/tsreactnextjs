@@ -7,6 +7,15 @@ const H1 = styled.h1`
   color: red;
 `
 
+const Badge = styled.span`
+  padding: 8px 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: red;
+  border-radius: 16px;
+`
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -49,6 +58,7 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div>
+        <Badge>Hello, World!</Badge>
       </main>
 
       <footer className={styles.footer}>
