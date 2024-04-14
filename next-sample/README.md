@@ -85,3 +85,9 @@ below are available
 - `.env.${name}`
 - `.env.${name}.local`
 - `*.local` is assumed to be added to `.gitignore`, store api key
+
+## Storybook
+
+- `npx sb@latest init`
+- `npm run storybook`
+- see `./components` dir
