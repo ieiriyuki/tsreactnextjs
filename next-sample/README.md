@@ -91,3 +91,6 @@ below are available
 - `npx sb@latest init`
 - `npm run storybook`
 - see `./components` dir
+- install for addon
+  - `npm install --save-dev @storybook/addon-essentials`
+  - `npx sb init` でインストールした場合は既に入っているらしい
