@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ComponentMeta, ComponentStory, Story } from '@storybook/react'
 import { StyledButton, StyledButtonProps } from '../components/StyledButton'
 import { action } from '@storybook/addon-actions'
+import MDXDocument from './StyledButton.mdx'
 
 // meta data object
 export default {
@@ -17,7 +18,12 @@ export default {
     children: {
       control: { type: 'text' },
     },
-  }
+  },
+  parameters: {
+    docs: {
+      page: MDXDocument,
+    },
+  },
 } as ComponentMeta<typeof StyledButton>
 
 const incrementAction = action('increment')
