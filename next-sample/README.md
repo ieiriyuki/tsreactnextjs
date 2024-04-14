@@ -94,3 +94,13 @@ below are available
 - install for addon
   - `npm install --save-dev @storybook/addon-essentials`
   - `npx sb init` でインストールした場合は既に入っているらしい
+
+## Unit Test
+
+- `npm install --save-dev jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom`
+- add below at project root
+  - `jest.setup.js`
+  - `jest.config.js`
+- edit `package.json`
+  - `"scripts": { "test": "jest" }`
+- `npm run test`
