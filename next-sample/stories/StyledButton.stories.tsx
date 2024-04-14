@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ComponentMeta, ComponentStory, Story } from '@storybook/react'
 import { StyledButton, StyledButtonProps } from '../components/StyledButton'
 import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
 import MDXDocument from './StyledButton.mdx'
 
 // meta data object
@@ -50,9 +51,9 @@ export const Success: Story<StyledButtonProps> = (props) => {
   )
 }
 
-export const Transparent: Story<StyledButtonProps> = (props) => {
+export const Transparent = (props) => {
   return (
-    <StyledButton {...props} variant="transparent">
+    <StyledButton {...props} variant="transparent" onClick={linkTo('StyledButton', 'Primary')}>
       Transparent
     </StyledButton>
   )
