@@ -1,17 +1,26 @@
+import { useState } from 'react'
 import { ComponentMeta, Story } from '@storybook/react'
 import { StyledButton, StyledButtonProps } from '../components/StyledButton'
+import { action } from '@storybook/addon-actions'
 
 // meta data object
 export default {
   title: 'StyledButton',
   component: StyledButton,
-  argTypes: { onClick: { action: 'clicked' } },
 } as ComponentMeta<typeof StyledButton>
 
-export const Primay: Story<StyledButtonProps> = (props) => {
+const incrementAction = action('increment')
+
+export const Primay = (props) => {
+  const [count, setCount] = useState(0)
+  const onClick = (e: React.MouseEvent) => {
+    incrementAction()
+    setCount((c) => c + 1)
+  }
+
   return (
-    <StyledButton {...props} variant="primary">
-      Primary
+    <StyledButton {...props} variant="primary" onClick={onClick}>
+      Count: {count}
     </StyledButton>
   )
 }
