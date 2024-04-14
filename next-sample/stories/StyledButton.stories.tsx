@@ -5,6 +5,7 @@ import { StyledButton, StyledButtonProps } from '../components/StyledButton'
 export default {
   title: 'StyledButton',
   component: StyledButton,
+  argTypes: { onClick: { action: 'clicked' } },
 } as ComponentMeta<typeof StyledButton>
 
 export const Primay: Story<StyledButtonProps> = (props) => {
