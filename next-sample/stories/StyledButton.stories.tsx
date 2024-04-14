@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ComponentMeta, Story } from '@storybook/react'
+import { ComponentMeta, ComponentStory, Story } from '@storybook/react'
 import { StyledButton, StyledButtonProps } from '../components/StyledButton'
 import { action } from '@storybook/addon-actions'
 
@@ -7,6 +7,17 @@ import { action } from '@storybook/addon-actions'
 export default {
   title: 'StyledButton',
   component: StyledButton,
+  argTypes: {
+    // variant for props via storybook
+    variant: {
+      control: { type: 'radio' },
+      options: ['primary', 'success', 'transparent'],
+    },
+    //
+    children: {
+      control: { type: 'text' },
+    },
+  }
 } as ComponentMeta<typeof StyledButton>
 
 const incrementAction = action('increment')
@@ -39,4 +50,13 @@ export const Transparent: Story<StyledButtonProps> = (props) => {
       Transparent
     </StyledButton>
   )
+}
+
+const Template: ComponentStory<typeof StyledButton> = (args) => <StyledButton {...args} />
+
+export const TemplateTest = Template.bind({})
+
+TemplateTest.args = {
+  variant: 'primary',
+  children: 'Primary',
 }
