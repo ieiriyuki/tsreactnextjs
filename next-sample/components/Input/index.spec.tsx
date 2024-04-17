@@ -3,6 +3,7 @@ import {
   screen,
   RenderResult,
   fireEvent,
+  getByRole,
 } from '@testing-library/react'
 import { Input } from './index'
 
@@ -29,5 +30,18 @@ describe('Input', () => {
 
     fireEvent.change(inputNode, { target: { value: inputText } })
     expect(inputNode.value).toBe(inputText)
+  })
+
+  it('should reset when user clicks button', () => {
+    const inputText = 'Test Input Text'
+    const inputNode = screen.getByLabelText('Username') as HTMLInputElement
+    fireEvent.change(inputNode, { target: { value: inputText } })
+
+    const buttonNode = screen.getByRole('button', {
+      name: 'Reset',
+    }) as HTMLButtonElement
+    fireEvent.click(buttonNode)
+
+    expect(inputNode.value).toBe('')
   })
 })
