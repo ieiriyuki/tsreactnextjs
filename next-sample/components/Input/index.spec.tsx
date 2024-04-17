@@ -1,4 +1,9 @@
-import { render, screen, RenderResult } from '@testing-library/react'
+import {
+  render,
+  screen,
+  RenderResult,
+  fireEvent,
+} from '@testing-library/react'
 import { Input } from './index'
 
 describe('Input', () => {
@@ -16,5 +21,13 @@ describe('Input', () => {
     const inputNode = screen.getByLabelText('Username') as HTMLInputElement
 
     expect(inputNode.value).toBe('')
+  })
+
+  it('should show input text', () => {
+    const inputText = 'Test Input Text'
+    const inputNode = screen.getByLabelText('Username') as HTMLInputElement
+
+    fireEvent.change(inputNode, { target: { value: inputText } })
+    expect(inputNode.value).toBe(inputText)
   })
 })
