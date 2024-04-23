@@ -40,4 +40,14 @@ describe('DelayInput', () => {
     const spanNode = screen.getByTestId('display-text') as HTMLSpanElement
     expect(spanNode.innerHTML).toEqual(`入力したテキスト: ${inputText}`)
   })
+
+  it('should call onChange 1 second after onChange event occurs', async () => {
+    const inputText = 'Test Input Text'
+    const inputNode = screen.getByTestId('input-text') as HTMLInputElement
+    fireEvent.change(inputNode, { target: { value: inputText } })
+    await act(() => {
+      jest.runAllTimers()
+    })
+    expect(handleChange).toHaveBeenCalled()
+  })
 })
