@@ -6,6 +6,15 @@ const nextConfig = {
       // styledComponentsの有効化
       styledComponents: true,
     }
+
+    if (process.env.NODE_ENV === 'production') {
+      compilerConfig = {
+        ...compilerConfig,
+        reactRemoveProperties: { properties: ['^data-testid$'] },
+      }
+    }
+
+    return compilerConfig
   })
 }
 
