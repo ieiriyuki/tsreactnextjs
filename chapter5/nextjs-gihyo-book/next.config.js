@@ -15,7 +15,7 @@ const nextConfig = {
     }
 
     return compilerConfig
-  })
+  })(),
 }
 
 module.exports = nextConfig
