@@ -19,7 +19,8 @@ const getUser = async (
   {
     "id": "1",
     "username": "taketo",
-    "email": "Taketo Yoshida",
+    "displayName": "Taketo Yoshida",
+    "email": "taketo@example.com",
     "profileImageUrl": "/users/1.png",
     "description": "Hello, I'm taketo. Nice to meet you!",
   }
