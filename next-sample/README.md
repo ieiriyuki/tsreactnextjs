@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Chapter 3 and 4
+
+- next sample in chapter 3
+- styled-components in chapter 4
+
 ## Getting Started
 
 First, run the development server:
@@ -80,3 +85,22 @@ below are available
 - `.env.${name}`
 - `.env.${name}.local`
 - `*.local` is assumed to be added to `.gitignore`, store api key
+
+## Storybook
+
+- `npx sb@latest init`
+- `npm run storybook`
+- see `./components` dir
+- install for addon
+  - `npm install --save-dev @storybook/addon-essentials`
+  - `npx sb init` でインストールした場合は既に入っているらしい
+
+## Unit Test
+
+- `npm install --save-dev jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom`
+- add below at project root
+  - `jest.setup.js`
+  - `jest.config.js`
+- edit `package.json`
+  - `"scripts": { "test": "jest" }`
+- `npm run test`
