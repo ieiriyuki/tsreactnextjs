@@ -1,6 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Button from './index'
-import { Description } from '@mui/icons-material'
 
 export default {
   title: 'Atoms/Button',
