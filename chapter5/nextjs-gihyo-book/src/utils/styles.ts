@@ -15,7 +15,7 @@ export type Space = SpaceThemeKeys | (string & {})
 export type Color = ColorThemeKeys | (string & {})
 export type FontSize = FontSizeThemeKeys | (string & {})
 export type LetterSpacing = LetterSpacingThemeKeys | (string & {})
-export type LineHeights = LineHeightThemeKeys | (string & {})
+export type LineHeight = LineHeightThemeKeys | (string & {})
 
 const BREAKPOINTS: { [key: string]: string } = {
   sm: '640px',
