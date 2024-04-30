@@ -6,7 +6,7 @@ import {
   Color,
   FontSize,
   LetterSpacing,
-  LineHeight,
+  LineHeights,
   Space,
 } from 'utils/styles'
 
@@ -18,7 +18,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   fontSize?: Responsive<FontSize>
   fontWeight?: Responsive<string>
   letterSpacing?: Responsive<LetterSpacing>
-  lineHeight?: Responsive<LineHeight>
+  lineHeight?: Responsive<LineHeights>
   textAlign?: Responsive<string>
   color?: Responsive<Color>
   backgroundColor?: Responsive<Color>
