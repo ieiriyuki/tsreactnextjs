@@ -56,7 +56,7 @@ const CartProduct = ({
             <Box>
               <Text
                 fontWeight="bold"
-                vaiant="mediumLarge"
+                variant="mediumLarge"
                 marginTop={0}
                 marginBottom={1}
                 as="p"
