@@ -1,9 +1,9 @@
 import { render, screen, RenderResult } from '@testing-library/react'
-import { ThemeProvider } from 'styled-components'
-import Header from '.'
 import { AuthContextProvider } from 'contexts/AuthContext'
-import { theme } from 'themes'
+import { ThemeProvider } from 'styled-components'
 import type { User, Product } from 'types'
+import Header from '.'
+import { theme } from 'themes'
 
 // ShoppingCartContextのモック
 jest.mock('contexts/ShoppingCartContext')
