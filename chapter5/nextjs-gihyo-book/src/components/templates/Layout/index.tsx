@@ -1,5 +1,5 @@
-import Seperator from 'components/atoms/Seperator'
-import Box from 'components/layouts/Box'
+import Seperator from 'components/atoms/Separator'
+import Box from 'components/layout/Box'
 import Footer from 'components/organisms/Footer'
 import Header from 'components/organisms/Header'
 
@@ -19,3 +19,5 @@ const Layout = ({ children }: LayoutProps) => {
     </>
   )
 }
+
+export default Layout
